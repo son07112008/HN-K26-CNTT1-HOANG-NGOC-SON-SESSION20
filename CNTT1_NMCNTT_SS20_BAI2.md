@@ -1,0 +1,5 @@
+1. cơ chế domino effectkhi một web nhỏ bị rò rỉ dữ liệu, hacker lấy được cặp tài khoản/mật khẩu thô (123456).hacker dùng công cụ tự động (credential stuffing) thử ngay tập dữ liệu đó lên các dịch vụ lớn (Gmail, Facebook, GitHub).do người dùng dùng chung một mật khẩu, các tài khoản lớn lần lượt bị chiếm đoạt theo hiệu ứng quân bài domino.
+
+2. mật khẩu cảm tính vs máy tính sinh racảm tính: gắn với thông tin cá nhân, quá ngắn hoặc đơn giản (123456), không gian mẫu nhỏ-> dễ bị vét cạn (brute-force) dò ra trong chớp mắt.do máy tính sinh ra: ngẫu nhiên dài từ 16-32 ký tự, đủ chữ hoa, thường, số, ký tự đặc biệt -> không gian mẫu khổng lồ, bất khả thi để dò.
+
+3. password manager (chuẩn aes-256) vs ghi chép thủ côngghi chép thủ công (sổ tay/notepad): dễ bị đọc lén hoặc dính mã độc đánh cắp tệp dưới dạng plaintext.password manager (aes-256): mã hóa toàn bộ dữ liệu két sắt ngay trên thiết bị trước khi đẩy lên cloud. Hacker hack được server cũng chỉ nhận lại bản mã (ciphertext) vô nghĩa, không thể giải mã nếu không có Master Passphrase.
